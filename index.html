@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <script>
+  window.wxOConfiguration = {
+    orchestrationID: "42379027d430475b88345e10c0b3a286_058080aa-109f-4a25-ad02-0236434b33cc",
+    hostURL: "https://us-south.watson-orchestrate.cloud.ibm.com",
+    rootElementID: "root",
+    deploymentPlatform: "ibmcloud",
+    crn: "crn:v1:bluemix:public:watsonx-orchestrate:us-south:a/42379027d430475b88345e10c0b3a286:058080aa-109f-4a25-ad02-0236434b33cc::",
+    chatOptions: {
+        agentId: "0efa9902-2212-431d-8c23-f8db4b3b3096", 
+        agentEnvironmentId: "5f986c18-e9c1-4744-8537-b77b1a6ca5d1",
+    }
+  };
+  setTimeout(function () {
+    const script = document.createElement('script');
+    script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
+    script.addEventListener('load', function () {
+        wxoLoader.init();
+    });
+    document.head.appendChild(script);
+  }, 0);                     
+</script>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Background Image Mock</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url("lendyr-homepage.png") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px 30px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+</body>
+</html>
